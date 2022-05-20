@@ -1,0 +1,31 @@
+p {
+    color:  #3a5311;
+}
+
+p.exemplo {
+    background-color: darkgray;
+    color: greenyellow;
+    width: 10%;
+}
+
+p.exemplolinha {
+    background-color: darkgray;
+    color: greenyellow;
+    width: 46%;
+}
+
+p.exemploin {
+    background-color: darkgray;
+    color: greenyellow;
+    width: 15%;
+}
+
+p.exemploex {
+    background-color: darkgray;
+    color: greenyellow;
+    width: 25%;
+}
+
+p.utilizar {
+    color: green;
+}

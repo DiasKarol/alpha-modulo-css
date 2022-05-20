@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Caixas</title>
+</head>
+<body>
+    <Header>
+        <h1>Caixas</h1>
+        <p>Sabemos que em uma página html, todo elemento se comporta como caixa, hoje iremos estudar sobre esses comportamentos e como utiliza-los em css.</p>
+    </Header>
+
+    <main>
+        <h2>Box model</h2>
+        <p>O modelo de caixa CSS define como as diferentes partes de uma caixa trabalham juntas para criar uma caixa que você pode ver em uma página. <br />
+        Dentro de uma caixa temos:</p>
+        <section id="boxModel">
+            <img src="boxModel.png" alt="Estrutura das caixas em css">
+            <article>
+                <p>Como podemos ver na imagen, temos: </p>
+                <p>O <strong>Content</strong> que fica no centro da caixa e conseguimos dimensiona-los usando propriedades como "widthe" e "height".</p> 
+                <p>Em seguida, temos <strong>padding</strong> que é o espaço em branco ao redor do conteúdo e pode ser controlado usando "padding" e propriedades relacionadasno css.</p> 
+                <p>Logo após, temos o <strong>border</strong> que envolve os conteudos a cima e pode ser controlado no css utilizando o "border" e propriedades relacionadas.</p>
+                <p>E contendo os outros conteúdos, O <strong>border</strong> é a camada mais externa e seu tamanho pode ser controlado usando "margin" e propriedades relacionadas.</p>
+            </article>
+        </section>
+
+        <h3>As propriedades</h3>
+        <section id="propriedade">
+            <article>
+                <p><b>Width</b> <br />
+                    Determina a largura da área de conteúdo (content) de um elemento.</p>
+            </article>
+
+            <article>
+                <p><b>Height</b> <br />
+                    Determina a altura da área do conteúdo de um elemento.</p>
+            </article>
+
+            <article>
+                <p><b>Padding</b> <br />
+                    Define uma a distância entre o conteúdo de um elemento e suas bordas.</p>
+            </article>
+
+            <article>
+                <p><b>Margin</b> <br />
+                    Define a área de margem nos quatro lados do elemento. <br />
+                    É a distância entre o elemento em si e os elementos vizinhos.</p>
+            </article>
+
+            <article>
+                <p><b>Margin</b> <br />
+                    Define a área de margem nos quatro lados do elemento. <br />
+                    É a distância entre o elemento em si e os elementos vizinhos.</p>
+            </article>
+        </section>
+
+        <h3>Alguns tipos de Display</h3>
+        <p>O valor do display define o tipo de renderização que será usada no elemento.</p>
+
+        <section id="display">
+            <article>
+                <p><b>Block</b> <br />
+                    O elemento gera uma caixa de elemento de bloco.</p>
+            </article>
+
+            <article>
+                <p><b>Inline</b> <br />
+                    O elemento gera uma ou mais caixas de elementos inline.</p>
+            </article>
+
+            <article>
+                <p><b>Flex</b> <br />
+                    O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo Flexbox. Como o nome sugere, é flexível, o que permite a fácil adaptação dos elementos no espaço disponível.</p>
+            </article>
+
+            <article>
+                <p><b>grid</b> <br />
+                    O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo de grade, ou seja é definido uma estrutura de linha e coluna.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

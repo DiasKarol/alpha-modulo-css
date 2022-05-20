@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Seletores</title>
+</head>
+<body>
+    <header>
+        <h1>Seletores</h1>
+        <p id="primeirop">O seletore em css é o primeiro elemento de um conjunto de regras utilizadas no documento. Servem para informar ao navegador qual elemento será estilizado.</p>
+        <br />
+    </header>
+
+    <main>
+        <section class="secao">
+            <h2>Seletor universal</h2>
+            <p>Ele seleciona todo o documento e são representados por um *. É muito utlizado para "resetar" a folha de estilo e retirar todo o estilo padrão ja definido pelo navegador.</p>
+            <p>Exemplo: </p>
+            <p>* { <br />
+                margin: 0; <br />
+                padding: 0; <br />
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>Seletor tag/elemento</h2>
+            <p>O que ira referenciar o seletor é o proprio elemento html, ou seja, um h1, h2, section podem ser utilizados no seletor. Geralmente usados para estilização de repetição.</p>
+            <p>Por exemplo, se eu quero que todos os meus h2 tenham a cor purple e não quero realizar esse procedimento em cada h2 isolados, farei essa seleção atraves do css internal ou external desta forma:</p>
+            <p>h2 { <br />
+                <p class="tag">color: black;<br /></p>
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>Seletor Class</h2>
+            <p>Para utilizar uma class como seletor, primeiro precisamos entender que a class pode se repetir em mais de elemento e que os elementos podem ter mais de uma class</p>
+            <p>O seletor class é referenciado no css por um . (ponto) antes do nome atribuido a class.</p>
+            <p>Exemplo:</p>
+            <p>.myclass { 
+                <p class="myclass">color: darkgreen; <br />
+                background-color: lightgreen; <br /></p>
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>Seletor ID</h2>
+            <p>O ID age como uma identidade, dessa forma, o id não pode ser repetido e só podemos inserir uma ID em cada elemento.</p>
+            <p>O seletor ID é referenciado no css por um # antes do nome atribuido a ele.</p>
+            <p>Exemplo:</p>
+            <p>#myid {
+                <p id="myid">
+                    color: darkviolet; <br />
+                    background-color: violet; <br /></p>
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>Seletor de atributo</h2>
+            <p>Seleciona os elementos através de um atributo dado a tag html</p>
+            <ul>
+                <p>Podemos selecionar elementos que o valor do atributo sejam:</p>
+                <li>Exatamente iguais ao valor informado: p[atributo="valor"]</li>
+                <li>Iniciados com o valor informado: p[atributo^="valor"]</li>
+                <li>Finalizem com o valor informado: p[atributo$="valor"]</li>
+                <li>Que contenha o valor informado: p[atributo*="valor"]</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>Pseudo-class</h2>
+            <p>As pseudo-classes funcionam como palavras-chaves que são adicionadas ao seletor de elementos no qual se encontram em um estado específico.</p>
+            <p>Por exemplo, se eu quiser que o primeiro paragrafo de um artigo fique com a cor azul, posso adicionar um <b>:first-child</b> e ir atualizando somente o html a partir deste ponto.</p>
+            <p>no css ficaria assim: <br />
+                article:first-child { <br />
+                color: blue; <br />
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>Pseudo-elementos</h2>
+            <p>As pseudo-elementos são como palavras-chaves adicionadas ao seletor para estilizar uma parte especifica do elemento selecionado.</p>
+            <p id="pelemento">Por exemplo: para adicionar um simbolo antes de um link, usamos: <br />
+                a::before { <br />
+                content: "⇒"; <br />
+            }</p>
+        </section>
+
+        <section class="secao">
+            <h2>combinator</h2>
+            <p>Como o proprio nome diz, este seletor combina outros dois seletores dando uma melhor localização dentro do documento.</p>
+            <ul>
+                <p>Existem 4 combinators diferentes:</p>
+                <li>O combinador descendente (Espaço): é feito no relacionamento de pai, pai do pai, pai do pai do pai...</li>
+                <li>O Filho (>): Corresponde somente aos filhos diretos do primeiro seletor</li>
+                <li>O irmão adjacente (+): Corresponde apenas aos elementos correspondidos pelo segundo seletor que é o próximo elemento irmão do primeiro seletor</li>
+                <li>O irmão geral (~): Ele seleciona irmãos de um elemento, mesmo que eles não sejam diretamente adjacentes.</li>
+            </ul>
+        </section>
+    
+
+</main>
+</body>
+</html>

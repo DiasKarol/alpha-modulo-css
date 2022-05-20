@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cores</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cores</h1>
+      <p>As cores em CSS podem ser especificadas pelos seguintes métodos:</p>
+        <section>
+          <ul>
+            <li>Cores hexadecimais</li>
+            <li>Cores hexadecimais com transparência</li>
+            <li>Cores RGB</li>
+            <li>Cores RGBA</li>
+          </ul>
+          <ul>
+            <li>Cores HSL</li>
+            <li>Cores HSLA</li>
+            <li>Cores predefinidos/entre navegadores</li>
+            <li>Com a palavra- currentcolorchave</li>
+          </ul>
+        </section>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Cores hexadecimais</h2>
+      <p>Uma cor hexadecimal é especificada com: #RRGGBB, onde os inteiros hexadecimais e todos os valores devem estar entre 00 e FF. <br>
+        Para adicionar transparência ao hexadecimal, basta acrescentar dois dígitos adicionais entre 00 e FF ao final do código.</p>
+      <ul>
+        <li>RR (vermelho) #ff0000</li>
+        <li>GG (verde) #00ff00</li>
+        <li>BB (azul) #0000ff</li>
+        <li>Azul com transparência #0000ff80</li>
+      </ul>
+      <article>
+        <h3>Exemplo:</h3>
+        <p class="hexa">Este texto esta com cor hexadecimal de código #FF1493 e a sua marcação contém o código #ffb6c18a</p>
+      </article>
+      </section>
+
+      <section>
+        <h2>Cores RGB</h2>
+        <p>Define cores usando o modelo Red-green-blue, o RGB pode representaro total de 16.777.216 cores. <br />
+          Para adicionar transparência ao RGB, basta acrescentar o(s) digito(s) alpha ao final do código.</p>
+        <ul>
+          <li>rgb(255,0,0) -> red</li>
+          <li>rgb(0,255,0) -> green</li>
+          <li>rgb(0,0,255) -> blue</li>
+          <li>rgba(255, 0, 0, 1) -> vermelho com opacidade 100%</li>
+        </ul>
+        <article>
+          <h3>Exemplo:</h3>
+          <p class="rgb">Este texto esta com cor RGC de código rgb(0,255,255) e a sua marcação contém o código RGBA rgba(0, 206, 209, 0.596)</p>
+        </article>
+      </section>
+
+    <section>
+      <h2>Cores HSL</h2>
+        <p>HSL significa matiz, saturação e leveza e representa uma representação de cores de coordenadas cilíndricas. <br />
+          Para adicionar transparência ao HSL, basta acrescentar o(s) digito(s) alpha ao final do código.</p>
+        <ul>
+          <li>hue -> Define um grau na roda de cor (de 0 a 360) - 0 (ou 360) é vermelho, 120 é verde, 240 é azul</li>
+          <li>saturation -> Define a saturação; 0% é um tom de cinza e 100% é a cor completa (saturação completa)</li>
+          <li>lightness -> Define a leveza; 0% é preto, 50% é normal, e 100% é branco</li>
+        </ul>
+        <article>
+          <h3>Exemplo:</h3>
+          <p class="hsl">Este texto esta com cor hsl de código HSL(120, 100%, 25%) e a sua marcação contém o código HSLA hsl(120, 60%, 70%, 0.5)</p>
+        </article>
+    </section>
+
+    <section>
+      <h2>Cores predefinidas por navegadores</h2>
+        <p>140 nomes de cores são predefinidos na especificação de cores HTML e CSS.</p>
+        <ul>
+          <li>background-color: coral;</li>
+          <li>background-color: brown;</li>
+        </ul>
+        <article>
+          <h3>Exemplo:</h3>
+          <p class="name">Este texto esta com cor gray e a sua marcação contém a cor yellow</p>
+        </article>
+    </section>
+
+    <section>
+      <h2>Com a currentcolor (palavra-chave)</h2>
+        <p>A currentcolor (palavra-chave) se refere ao valor da propriedade color de um elemento.</p>
+        <article>
+          <h3>Exemplo:</h3>
+          <p class="chave">Este texto está da cor de sua caixa</p>
+        </article>
+    </section>
+
+    </main>
+  </body>
+</html>

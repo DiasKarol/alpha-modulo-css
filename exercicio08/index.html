@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Flex</title>
+    </head>
+    <body>
+        <header>
+            <h1>Flexbox</h1>
+            <p>Lida com o layout dos itens de maneira unidimensional. Definido pela propriedade display: flex;</p>
+            <p>Com o flex e as propriedades que utilizamos em conjunto,
+                conseguimos alinhar o layout da página da forma como desejamos.</p>
+        </header>
+
+        <main>
+            <h2>Centralizando uma imagem em um container</h2>
+            <p id="explicacao">Neste exemplo, para deixar a imagem no centro da caixa, utilizamos o "justify-content: center;" e o "align-items: center;" <br />
+            O motivo é simples, o justify-content segue o eixo primário (que no nosso exemplo é a row). Já o align-items no eixo segundário (column)</p>
+            <section id="exercicio">
+                <img src="./solua.jpg" alt="Cenario dividado ao meio, de um lado vemos o dia/sol e do outro a noite/lua."/>
+            </section>
+
+            <h2>Alinhamentos mais utilizados</h2>
+            <article>
+                <h3>Alinhando no centro</h3>
+                <p>Para alinhar os elementos abaixo no centro, utilizei o "display: flex;", "justify-content: center;" e "align-items: center;"</p>
+                <p>Aqui nossos itens estão arrumados por "order" que especifica a ordem de um item conforme o valor dado ao elemento.</p>
+                <section id="centro">
+                    <p id="c1">Item 1 <br /> Order: 0</p>
+                    <p id="c2">Item 2 <br /> Order: 4</p>
+                    <p id="c3">Item 3 <br /> Order: -2</p>
+                </section>
+            </article>
+
+            <article>
+                <h3>Alinhando na vertical</h3>
+                <p>Para alinhar os elementos na vertical, utilizei o "display: flex;", "justify-content: space-around;" e "align-items: center;"</p>
+                <section id="vert">
+                    <p id="v1">Item 1</p>
+                    <p id="v2">Item 2</p>
+                    <p id="v3">Item 3</p>
+                </section>
+            </article>
+
+            <article>
+                <h3>Alinhando na horizontal</h3>
+                <p>Para alinhar os elementos na vertical, utilizei o "display: flex;", "justify-content: space-around;" e "align-items: center;"</p>
+                <section id="hori">
+                    <p id="ho1">Item 1</p>
+                    <p id="ho2">Item 2</p>
+                    <p id="ho3">Item 3</p>
+                </section>
+            </article>
+            
+            <h2>Outros alinhamentos</h2>
+            <article>
+                <h3>Alinhando na vertical no inicio</h3>
+                <section id="verti">
+                    <p id="vi1">Item 1</p>
+                    <p id="vi2">Item 2</p>
+                    <p id="vi3">Item 3</p>
+                </section>
+            </article>
+
+            <article>
+                <h3>Alinhando na vertical no final</h3>
+                <section id="vertf">
+                    <p id="vf1">Item 1</p>
+                    <p id="vf2">Item 2</p>
+                    <p id="vf3">Item 3</p>
+                </section>
+            </article>
+
+            <article>
+                <h3>Alinhamento horiental no inicio</h3>
+                <section id="horinitial">
+                    <p id="hoi1">Item 1</p>
+                    <p id="hoi2">Item 2</p>
+                    <p id="hoi3">Item 3</p>
+                </section>
+            </article>
+
+            <article>
+                <h3>Alinhamento horiental no final</h3>
+                <section id="horifinal">
+                    <p id="hof1">Item 1</p>
+                    <p id="hof2">Item 2</p>
+                    <p id="hof3">Item 3</p>
+                </section>
+            </article>
+
+        </main>
+    </body>
+</html>

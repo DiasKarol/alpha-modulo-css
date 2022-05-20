@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>css</title>
+</head>
+
+<style>
+    body {
+    background-color: beige;
+    margin-top: 80px;
+    margin-left: 250px;
+    margin-right: 250px;
+    align-content: center;
+} 
+</style>
+
+<body>
+    <h1 style="color: aquamarine; background-color: gray;">O que é e para que serve a CSS</h1>
+    <p>CSS significa Cascading Stylesheets(Folhas de Estilo em Cascata), é uma linguagem criada para fazer estilização de páginas web. Com ela podemos dar cor aos elementos presentes na pagina, organizar, distribuir e arquitetar uma pagina web.</p>
+    <p>A sintaxe utilizada na CSS é basicamente o seletor (elemento html como tags, classe, id, etc.) e logo após colocamos chaves e dentro teremos, uma propriedade (a regra que será aplicada como color, background, font-size, etc.) e iremos separar por dois pontos e informamos o valor (cor, tamanho da fonte, etc.), antes de fechar a nossa chave, colocamos ponto e virgula. Como podemos ver no exemplo abaixo.</p>
+    <p class="exemplo">
+        p { <br />
+        font-size: 24px; <br />
+        color: green; <br />
+        }
+    </p>
+
+    <br />
+
+    <h1 style="color: aquamarine; background-color: gray;">MANEIRAS DE INSERÇÃO</h1>
+    <p>Temos 3 maneiras básicas de inserir a css em nosso documento html: inline, internal e external. iremos ver a seguir sua prioridade e como inserir.</p>
+    <br />
+
+    <h2 style="color: darkslategrey;">CSS inline</h2>
+    <p>No css inline, você atribui estilização em um elemento html específico.</p>
+    <p>O recomendado é que seja utilizado somente em casos que você não tenha acesso ao arquivo css, ou nos momentos em que for necessario inserir estilo a um unico elemento.</p>
+    <p class="exemplolinha">
+        &lt;p style="color: blue;"&gt; Este texto seria apresentado na cor indicada no style &lt;/p&gt;
+    </p>
+    <br />
+
+    <h2 style="color: darkslategrey;">CSS internal</h2>
+    <p>No css internal, realizamos a atribuição de estilo a uma única página html.</p>
+    <p>Uma vantagem da utilização do internal, é que não vemos mais de um arquivo para a mesma páginas, o que também é uma desvantagem, por acabar levando mais tempo para carregar a página, ja que o documento ficará maior</p>
+    <p class="exemploin"> 
+        &lt;head&gt;...&lt;/head&gt; <br />
+        &lt;style&gt; <br />
+            body { <br />
+            background-color: ocean; <br />
+            color: blue;<br />
+        }<br />
+        &lt;/style&gt;<br />
+        &lt;body&gt;...&lt;/body&gt;<br /> 
+    </p>
+    <br />
+
+    <h2 style="color: darkslategrey;">CSS external</h2>
+    <p>No css external, você consegue fazer o link de página html com o arquivo css</p>
+    <p>A vantagem do .css é que o arquivo estará em seu próprio documento, o que facilita na estilização de um grande site, já que podemos realizar a linkagem de um mesmo arquivo em outras paginas, economizamos tempo e unificamos o estilo utilizado.</p>
+    <p class="utilizar"> Como utilizar: <br />
+        Crie um documento com a extensão <b>.css</b> e faça toda a estilização do site. No documento html, voce irá linkar o documento .css no <b>head</b> de sua página.<br />
+        Dessa forma:
+        <p class="exemploex">&lt;head&gt; <br />
+            &lt;link rel="stylesheet" href="namedoc.css"&gt; <br />
+            ... <br />
+            &lt;/head&gt; <br />
+            &lt;body&gt;...&lt;/body&gt;<br /> 
+        </p>
+    </p>
+
+</body>
+</html>

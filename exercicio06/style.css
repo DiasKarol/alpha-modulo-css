@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "firasans";
+    src: url("./firasans/firasans-bold-webfont.woff");
+}
+
+body {
+    padding-inline: 300px;
+    margin: auto;
+    background-color: lightgray;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: gray;
+    color: lightgray;
+    font-family: firasans;
+    text-align: justify;
+}
+
+h3 {
+    margin-top: 5px;
+    padding-block: 5px;
+}
+
+.ordem {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+#disc {
+    list-style: disc;
+}
+
+#circle {
+    list-style: circle;
+}
+
+#square {
+    list-style: square;
+}
+
+#none {
+    list-style: none;
+}
+
+/* ol */
+
+#decimal {
+    list-style: decimal;
+}
+
+#lowerr {
+    list-style: lower-roman;
+}
+
+#lowerl {
+    list-style: lower-latin;
+}
+
+#upperr {
+    list-style: upper-roman;
+}
+
+#upperl {
+    list-style: upper-latin;
+}
+
+/* link */
+
+.arruma {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-inline: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: coral;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.aa:focus {
+    color: brown;
+}
+
+a:active {
+    color: black;
+}

@@ -1,0 +1,52 @@
+article {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.solid {
+    background-color: cornflowerblue;
+    color: aqua;
+    width: 250px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.transparente {
+    background-color: #5a76123d;
+    color: darkgreen;
+    width: 250px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.gradiente {
+    background-image: linear-gradient(to left, rgba(0, 0, 255, 1), rgb(0,191,255));
+    color: aqua;
+    width: 250px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.imagem {
+    background-image: url(./imagem/1.svg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 260px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    margin-bottom: 16px;
+}
+
+.repetir{
+    background-image: url(./imagem/1.svg);
+    background-repeat: repeat-x;
+    height: 260px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+}

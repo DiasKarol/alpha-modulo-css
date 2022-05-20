@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    background-color: lavenderblush;
+}
+
+h1 {
+    color: darkmagenta;
+    background-color: lavender;
+    text-align: center;
+}
+
+header p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: lavenderblush;
+    background-color: gray;
+    width: 110px;
+}
+
+main p {
+    padding: 10px;
+}
+
+#boxModel {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+#boxModel img {
+    height: 300px;
+    text-align: center;
+}
+
+#boxModel p {
+    padding: 5px;
+}
+
+h3 {
+    padding-top: 20px;
+    color: darkorchid;
+}
+
+#propriedade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}

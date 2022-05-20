@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 800px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p {
+    padding: 5px
+}
+
+#tipos {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+#visivel {
+    overflow: visible;
+    border: 1px solid black;
+}
+
+#oculto {
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+#rolagem {
+    overflow: auto;
+    border: 1px solid black;
+}
+
+#rolar {
+    overflow: scroll;
+    border: 1px solid black;
+}

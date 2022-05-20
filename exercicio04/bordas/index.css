@@ -1,0 +1,147 @@
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.none {
+    background-color: rgb(214, 210, 210);
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.solid {
+    border: 1px;
+    border-style: solid;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.dashed {
+    border: 1px;
+    border-style: dashed;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.dotted {
+    border: 1px;
+    border-style: dotted;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.inset {
+    border: 1px;
+    border-style: inset;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.ds {
+    border: 1px;
+    border-style: dashed solid;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.dd {
+    border: 1px;
+    border-style: dashed double none;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.dgd {
+    border: 1px;
+    border-style: dashed groove none dotted;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.outset {
+    border: 1px;
+    border-style: outset;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.groove {
+    border: 1px;
+    border-style: groove;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.cores {
+    border: 2px;
+    border-style: solid;
+    border-color: blue red green yellow;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.duascores {
+    border: 5px;
+    border-style: solid;
+    border-color: grey purple;
+    border-style: dotted;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.redondo {
+    border: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: violet;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.bola {
+    border: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: orange;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}

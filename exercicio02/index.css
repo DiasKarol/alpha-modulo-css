@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+    margin-inline: 350px;
+    padding-bottom: 15px;
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: blue;
+    background-color: black;
+    font-size: 2.5rem; /* 1 rem = 16px */
+    transition: 1s;
+    height: 3rem;
+}
+
+h1:hover {
+    font-size: 3rem;
+} 
+
+
+#primeirop {
+    color: darkblue;
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+}
+
+h2 {
+    color: deepskyblue;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+main .secao {
+    margin-bottom: 30px;
+}
+
+.tag {
+    color: black;
+}
+
+.myclass {
+    color: darkgreen;
+    background-color: lightgreen;
+    width: 200px;
+}
+
+#myid { 
+    color: darkviolet;
+    background-color: violet;
+    width: 170px;
+}
+
+.secao ul > p {
+    margin: 5px;
+}
+
+.secao > ul {
+    margin-left: 1.25rem;
+}
+
+#pelemento::before {
+    content: "⇒";
+    color: red;
+}

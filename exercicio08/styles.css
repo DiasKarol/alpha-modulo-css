@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin-inline: auto;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+
+/* estilização do header */
+header h1 {
+    font-size: 2.5rem;
+    color: gray;
+    text-decoration: underline overline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header p {
+margin-bottom: 10px;
+text-align: center;
+}
+
+/* estilização do main */
+main h2 {
+    color: lightgray;
+    background-color: gray;
+    margin-top: 30px;
+}
+
+/* estilização do primeiro box */
+#explicacao {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#exercicio {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+
+/* estilização do segundo box */
+article > h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+article > p:last-of-type {
+    margin-bottom: 16px;
+}
+
+/* Estização "Alinhando no centro"*/
+#centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+    
+}
+
+#c1 {
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+}
+
+#c2 {
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 4;
+}
+
+#c3 {
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: -2;
+}
+
+/* Estização "Alinhando na vertical"*/
+#vert {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#v1 {
+    background-color: rgb(245, 232, 59);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#v2 {
+    background-color: gold;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#v3 {
+    background-color: darkgoldenrod;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estização "Alinhando na horizontal"*/
+#hori {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#ho1 {
+    background-color: darkcyan;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ho2 {
+    background-color: darkorchid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ho3 {
+    background-color: darkolivegreen;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estização "Alinhando na vertical no inicio"*/
+#verti {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#vi1 {
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vi2 {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vi3 {
+    background-color: chocolate;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estização "Alinhando na vertical no final"*/
+#vertf {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#vf1 {
+    background-color: pink;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vf2 {
+    background-color: lightpink;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vf3 {
+    background-color: darksalmon;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estização "Alinhando na horizontal no inicio"*/
+#horinitial {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#hoi1 {
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hoi2 {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hoi3 {
+    background-color: darkblue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estização "Alinhando na horizontal no final"*/
+#horifinal {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+#hof1 {
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hof2 {
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hof3 {
+    background-color: darkorchid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
