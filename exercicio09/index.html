@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Wrap</title>
+</head>
+<body>
+    <header>
+        <h1>flex-wrap</h1>
+        <p>Em um documento css, por padrão ao utilizar o elemento "display: flex;" automaticamente o conteúdo dentro do conteiner não quebra linha/coluna, mesmo que tenha essa necessidade o padrão dele é manter tudo na mesma linha/coluna.</p>
+        <p>O que estou querendo dizer, é que o flex-wrap define se os itens flexíveis são forçados a ficarem na mesma linha/coluna ou se podem ser quebradas. </p>
+    </header>
+
+    <main>
+        <H2>Sintaxe do flex-wrap e exemplos</H2>
+
+        <section id="ordem">
+            <article>
+                <h3>flex-wrap: nowrap;</h3>
+                <p>Neste exemplo, utilizei:</p>
+                <div class="fundo">
+                    <code>display: flex; <br />
+                        justify-content: center; <br />
+                        align-items: center; <br />
+                        flex-wrap: nowrap;</code>
+                </div>               
+                <div id="now">
+                    <p class="item1">Item 1</p>
+                    <p class="item2">Item 2</p>
+                    <p class="item3">Item 3</p>
+                    <p class="item1">Item 4</p>
+                    <p class="item2">Item 5</p>
+                    <p class="item3">Item 6</p>
+                </div>
+            </article>
+    
+            <article>
+                <h3>flex-wrap: wrap;</h3>
+                <p>Neste exemplo, utilizei:</p>
+                <div class="fundo">
+                    <code>display: flex; <br />
+                        justify-content: center; <br />
+                        align-items: center; <br />
+                        flex-wrap: nowrap;</code>
+                </div>
+                <div id="wrap">
+                    <p class="item1">Item 1</p>
+                    <p class="item2">Item 2</p>
+                    <p class="item3">Item 3</p>
+                    <p class="item1">Item 4</p>
+                    <p class="item2">Item 5</p>
+                    <p class="item3">Item 6</p>
+                </div>
+            </article>
+    
+            <article>
+                <h3>flex-wrap: wrap-reverse;</h3>
+                <p>Neste exemplo, utilizei:</p>
+                <div class="fundo">
+                    <code>display: flex; <br />
+                        justify-content: end; <br />
+                        align-items: center; <br />
+                        flex-wrap: wrap-reverse;</code>
+                </div>
+                <div id="reverse">
+                    <p class="item1">Item 1</p>
+                    <p class="item2">Item 2</p>
+                    <p class="item3">Item 3</p>
+                    <p class="item1">Item 4</p>
+                    <p class="item2">Item 5</p>
+                    <p class="item3">Item 6</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>

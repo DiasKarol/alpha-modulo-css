@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin-inline: auto;
+    margin-top: 50px;
+    background-color: lightgray;
+}
+
+/* estilização header */
+header h1 {
+    font-size: 2.5rem;
+    color: gray;
+    text-decoration: underline overline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header > p:last-of-type {
+margin-bottom: 10px;
+}
+
+/* estilização main */
+main h2 {
+    color: lightgray;
+    background-color: gray;
+    margin-top: 30px;
+    text-align: center;
+}
+
+article > h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.fundo{
+    background-color: #eee;
+    border: 3px;
+    border-style: inset;
+    padding: 5px;
+    width: 280px;
+}
+
+code {
+    font-family: courier, monospace;
+    padding: 0 3px;
+    margin-bottom: 35px;
+}
+
+/* estilização nowrap */
+#now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    background-color: azure;
+}
+
+/* estilização wrap */
+#wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    background-color: azure;
+}
+
+/* estilização reverse */
+#reverse {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 16px;
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    background-color: azure;
+}
+
+/* estilização itens */
+
+.item1 {
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 {
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item3 {
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
