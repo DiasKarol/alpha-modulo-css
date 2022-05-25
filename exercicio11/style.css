@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url(//db.onlinewebfonts.com/c/c619ccca5271a0f4b58af34d8f467188?family=MuseoSlabW01-100); /* 
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap'); */
+
+:root {
+    --fundorosa: #d1bea9;
+    --fundo2: #b49b7f;
+    --verdesacola: #a5af63;
+    --verdecirculo: #899633;
+    --fonte: #fdf6f0;
+    --prod: #f5ece4;
+    --valor: #e9dbcb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ##################### body ##################### */
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--fundorosa);
+    padding-inline: 7px;
+    padding-bottom: 15px;
+    font-family: 'MuseoSlabW01-100';
+    font-weight: 500;
+}
+
+/* ##################### header ##################### */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 21px;
+    padding-inline: 5px;
+    width: 100%;
+    background-color: var(--fundo2);
+}
+
+header #sacola {
+    width: 25px;
+    fill: var(--verdesacola);
+    position: relative;
+}
+
+header #sacola p {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: rgba(0, 0, 0, 0.308);
+}
+
+header section h1 {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 29px;
+    color: var(--fonte);
+}
+
+header section p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--fonte);
+    font-family: 'Basic', sans-serif;
+}
+
+header #hamburguer {
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+/* ##################### main ##################### */
+
+main {
+    background-color: var(--fundo2);
+}
+
+.bar {
+    content: '';
+    width: 95%;
+    height: 1px;
+    margin-inline: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color: var(--fonte);
+}
+
+/* ########### main/primeira section ########### */
+
+main .chamativa {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+main section .transicao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+main section #sal {
+    width: 100%;
+    height: 367px;
+    background-image: url('./imagens/barraesal.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* main section #erva {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/ervadoce.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section #toalha {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/barraetoalha.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section #quadrado {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/barraquadrada.svg');
+    background-size: cover;
+    background-position: center;
+} */
+
+main section #lateral {
+    width: 100%;
+    height: 367px;
+    background-image: url('./imagens/Backgroundlateral.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section #circle {
+    background-color: var(--verdecirculo);
+    color: var(--fonte);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section #cuide {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+}
+
+main section #diariamente {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}
+
+/* ########### main/segunda section ########### */
+
+main #produto {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+}
+
+main .produtos {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+main .produtos img {
+    width: 200px;
+    height: 200px;
+    flex: 0 0 200px;
+}
+
+#menor,
+#maior {
+    text-align: center;
+    color: var(--fonte);
+    font-size: 27px;
+}
+
+#discricao {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 105px;
+}
+
+section #preco {
+    font-size: 16px;
+    color: var(--prod);
+}
+
+section #valor {
+    font-size: 13px;
+    color: var(--valor);
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+section #promo {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: var(--valor);
+}
+
+section .v2 {
+    display: none;
+}
+
+/* ########### main/terceira section ########### */
+
+main #ordem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fonte);
+}
+
+main .order {
+    padding-block: 25px;
+}
+
+main .order .p1 {
+    font-size: 21px;
+}
+
+main .order .p2 {
+    font-size: 14px;
+}
+
+/* ##################### footer ##################### */
+
+footer {
+    margin-top: 15px;
+    color: var(--fonte);
+    background-color: var(--fundo2);
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 25px;
+}
+
+footer .RedesSociais img {
+    padding-bottom: 15px;
+}
+
+@media (min-width: 765px) {
+    body {
+        max-width: 995px;
+    }
+
+    /* ##################### header ##################### */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-inline: 5px;
+        width: 100%;
+        height: 241px;
+        background-color: var(--fundo2);
+        gap: 70px;
+    }
+
+    header section h1 {
+        font-size: 70px;
+        align-items: end;
+        margin-top: 17px;
+    }
+
+    header section p {
+        font-size: 25px;
+    }
+
+    header #hamburguer {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-family: 'MuseoSlabW01-100';
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: var(--fonte);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    header #sacola {
+        display: none;
+    }
+
+    header #sacolanav {
+        width: 25px;
+        fill: var(--verdesacola);
+        position: relative;
+    }
+
+    header #sacolanav p {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        color: rgba(0, 0, 0, 0.308);
+    }
+
+    /* ########### main/primeira section ########### */
+
+    main .chamativa {
+        padding-inline: 60px;
+    }
+
+    main section .transicao {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 537px;
+        padding-left: 0px;
+    }
+
+    main section #sal {
+        width: 100%;
+        height: 537px;
+        background-image: url('./imagens/barraesal.svg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* main section #erva {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/ervadoce.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section #toalha {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/barraetoalha.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section #quadrado {
+    width: 180px;
+    height: 367px;
+    background-image: url('./imagens/barraquadrada.svg');
+    background-size: cover;
+    background-position: center;
+} */
+
+    main section #lateral {
+        width: 100%;
+        height: 537px;
+        background-image: url('./imagens/Backgroundlateral.svg');
+        background-size: cover;
+        background-position: center;
+        padding-right: 30px;
+    }
+
+    main section #circle {
+        background-color: var(--verdecirculo);
+        color: var(--fonte);
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        position: absolute;
+        right: 285px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section #cuide {
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+    }
+
+    /* ########### main/segunda section ########### */
+
+    main #produto {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+
+    main .produtos {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menor,
+    #maior {
+        text-align: center;
+        padding-inline: 25px;
+        color: var(--fonte);
+        font-size: 27px;
+    }
+
+    #discricao {
+        display: flex;
+        gap: 10px;
+        padding-left: 75px;
+    }
+
+    section .v1 {
+        width: 200px;
+    }
+
+    section .v2 {
+        display: initial;
+        width: 200px;
+    }
+
+    /* ########### main/terceira section ########### */
+
+    main #ordem {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: -30px;
+    }
+
+    main .order {
+        padding-block: 25px;
+    }
+
+    main .order .p1 {
+        font-size: 21px;
+    }
+
+    main .order .p2 {
+        font-size: 14px;
+        margin-block: 16px;
+    }
+
+    .order img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .order a:last-of-type img {
+        width: 15px;
+        height: 15px;
+    }
+
+/* ########### footer ########### */
+
+    footer{
+        padding-bottom: 15px;
+    }
+
+    footer p {
+        max-width: 703px;
+        margin-inline: auto;
+    }
+
+    footer .RedesSociais img {
+        padding-bottom: 0;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer a:last-of-type img {
+        width: 15px;
+        height: 15px;
+    }
+}
