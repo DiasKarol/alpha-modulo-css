@@ -1,0 +1,753 @@
+:root {
+    --back1: #fef7ed;
+    --back2: #fff;
+    --backpe: #fef7ed;
+    --menu: #5167bb;
+    --menuse: #ff9b8c; 
+    --clickmenu: #ff8b7b;
+    --font: #3a54b4;
+    --btnhover: #8896cd;
+    --ltrpe: #e5dbdb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ##################### body ##################### */
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'WorkSans', sans-serif;
+    color: var(--font);
+}
+
+header,
+main section,
+footer {
+    padding-inline: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--back2);
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    background-color: var(--font);
+    color: var(--back2);
+}
+
+/* ##################### header ##################### */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--back1);
+    color: var(--font);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+header h1 svg {
+    width: 25px;
+    height: 20px;
+    fill: var(--font);
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+header #hamburguer svg {
+    width: 50px;
+    height: 15px;
+}
+
+header nav {
+    display: none;
+}
+
+/* ##################### main ##################### */
+
+main {
+    color: var(--font);
+}
+
+.img1e2 {
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* ##################### Introdução ##################### */
+
+#intro {
+    background-color: var(--back1);
+    padding-bottom: 34px;
+}
+
+#intro div {
+    text-align: center;
+}
+
+#intro div:first-of-type a {
+    display: none;
+}
+
+#intro h1 {
+    font-weight: 600;
+    font-size: 87px;
+    text-align: center;
+    line-height: 90%;
+    margin-bottom: 10px;
+}
+
+#intro img {
+    margin-bottom: 23px;
+}
+
+#intro p {
+    font-size: 21px;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+/* ##################### sobre mim ##################### */
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--back2);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 61px;
+}
+
+#sobre img {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+#sobre h2 {
+    font-size: 37px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+#sobre p {
+    color: var(--font);
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+
+#sobre .btn {
+    background-color: var(--font);
+    color: var(--back2);
+    font-size: 14px;
+    padding: 11px 47px;
+}
+
+/* ##################### servicos ##################### */
+
+#servicos {
+    background-color: var(--back2);
+    margin-bottom: 79px;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+#servicos div:last-of-type {
+    margin-bottom: 0;
+}
+
+#servicos h2 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+#servicos img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 11px;
+}
+
+#servicos h3 {
+    font-size: 27px;
+    padding-bottom: 13px;
+}
+
+#servicos p {
+    text-align: center;
+    color: var(--font);
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 27px;
+    line-height: 200%;
+}
+
+.btn2 {
+    align-self: center;
+    background-color: var(--font);
+    color: var(--back2);
+    font-size: 14px;
+    padding: 11px 40px;
+    margin-bottom: 13px;
+}
+
+/* ##################### Clientes ##################### */
+
+#clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back2);
+    gap: 5px;
+    margin-bottom: 52px;
+}
+
+#clientes h2 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#clientes img {
+    width: 100vw;
+}
+
+/* ##################### donos ##################### */
+
+#donos {
+    background-color: var(--back2);
+}
+
+#donos h2 {
+    font-weight: 600;
+    font-size: 37px;
+    text-align: center;
+    width: 250px;
+    margin-inline: auto;
+    margin-bottom: 56px;
+}
+
+#donos h3 {
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#donos p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 200%;
+    margin-bottom: 10px;
+}
+
+#donos .client {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+#donos .client:last-of-type {
+    margin-bottom: 45px;
+}
+
+/* ##################### contact ##################### */
+
+#contact {
+    background-color: var(--font);
+    color: var(--back2);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 9px;
+}
+
+#contact h2 {
+    font-weight: 600;
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#contact div {
+    margin-bottom: 33px;
+}
+
+#contact div:last-of-type {
+    margin-bottom: 23px;
+}
+
+#contact h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#contact p {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.84px;
+    line-height: 20.4px;
+}
+
+#contact form input, 
+#contact form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--back2);
+    color: var(--back2);
+    height: 40px;
+    margin-bottom: 10px;
+    font-family: 'WorkSans', sans-serif;
+}
+
+#contact form textarea {
+    height: 123px;
+    margin-bottom: 21px;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: var(--back2);
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+}
+
+#contact form button {
+    background-color: transparent;
+    border: none;
+    color: var(--back2);
+    margin-bottom: 48px;
+}
+
+#contact .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+#contact .icons a img {
+    width: 20px;
+    height: 20px;
+}
+
+#contact > img {
+    width: 194px;
+    height: 105px;
+    display: block;
+}
+
+/* ##################### footer ##################### */
+
+footer {
+    background-color: var(--backpe);
+    text-align: center;
+    width: 100vw;
+    padding-block: 13px;
+    margin-left: -20px;
+}
+
+footer p {
+    font-size: 11px;
+    color: var(--font);
+}
+
+/* ############################ media ############################ */
+
+@media (min-width: 765px) {
+
+    body {
+        max-width: 1000vh;
+        margin: auto;
+    }
+
+    header,
+    main section,
+    footer {
+        padding-inline: 80px;
+    }
+
+    .btn1:hover {
+        background-color: var(--btnhover);
+    }
+
+    .btn1 {
+        width: 180px;
+    }
+
+    /* ######## header ######## */
+
+    header {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 38px;
+        padding-bottom: 40px;
+        z-index: 99;
+    }
+
+    header section {
+        margin-bottom: 0;
+    }
+
+    header h1 svg {
+        width: 22px;
+        height: 28px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    header #navigation {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        gap: 26px;
+    }
+
+    header nav a {
+        color: var(--font);
+        font-size: 14px;
+    }
+
+    header nav a.active {
+        color: var(--clickmenu);
+    }
+
+    header nav a.active:hover {
+        color: var(--font);
+    }
+
+    header #hamburguer svg {
+        display: none;
+    }
+
+    /* ######## main ######## */
+
+    .img1e2 {
+        width: 479px;
+        height: 479px;
+    }
+
+    /* ######## Introdução ######## */
+
+    #intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 237px;
+    }
+
+    #intro div:first-of-type a {
+        display: flex;
+    }
+
+    #intro div:last-of-type a {
+        display: none;
+    }
+
+    #intro h1 {
+        font-size: 150px;
+        text-align: start;
+        line-height: 120px;
+        margin-bottom: 27px;
+    }
+
+    #intro p {
+        font-size: 31px;
+        font-weight: 300;
+        text-align: start;
+    }
+
+    #intro img {
+        margin-left: 90px;
+        margin-bottom: 136px;
+    }
+
+    /* ######## sobre mim ######## */
+
+    #sobre {
+        display: flex;
+        flex-direction: row;
+        padding-inline: 126px;
+    }
+
+    #sobre img {
+        margin-right: 91px;
+        margin-bottom: 160px;
+    }
+
+    #sobre h2 {
+        font-size: 62px;
+        text-align: start;
+        padding-top: 50px;
+        padding-bottom: 36px;
+    }
+
+    #sobre p {
+        font-size: 14px;
+        text-align: start;
+    }
+
+    #sobre .img1e2 {
+        width: 419px;
+        height: 410px;
+    }
+
+    /* ######## serviços ######## */
+
+    #servicos {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    #servicos h2 {
+        font-size: 62px;
+        flex-basis: 100%;
+        padding-bottom: 82px;
+    }
+
+    #servicos div {
+        width: 241px;
+    }
+
+    #servicos h3 {
+        font-size: 30px;
+    }
+
+    #servicos p {
+        font-size: 14px;
+        line-height: 25.2px;
+    }
+
+    #servicos img {
+        width: 230px;
+        height: 230px;
+    }
+
+    /* ######## Clientes ######## */
+
+    #clientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 105px;
+    }
+
+    #clientes h2 {
+        font-size: 62px;
+        flex-basis: 100%;
+        padding-bottom: 67px;
+    }
+
+    #clientes img {
+        width: 370px;
+        height: 277px;
+    }
+
+    /* ######## Clientes ######## */
+
+    #donos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 12px;
+
+    }
+
+    #donos h2 {
+        font-size: 62px;
+        width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 110px;
+    }
+
+    #donos div {
+        width: 322px;
+    }
+
+    #donos h3 {
+        font-size: 30px;
+        margin-bottom: 31px;
+    }
+
+    #donos p {
+        font-size: 14px;
+        margin-bottom: 37px;
+    }
+
+    #donos .client {
+        font-size: 15px;
+    }
+
+    #donos .client:last-of-type {
+        margin-bottom: 124px;
+    }
+
+    /* ######## contact ######## */
+
+    #contact {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'h2 h2 h2 h2'
+        'div1 div2 div3 div4'
+        'form form form form'
+        'img icons icons none';
+        padding-inline: 254px;
+        padding-bottom: 46.391px;
+    }
+
+    #contact h2 {
+        grid-area: h2;
+        font-size: 62px;
+        flex-basis: 100%;
+        padding-bottom: 67px;
+    }
+
+    #contact h3 {
+        font-size: 15px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact div {
+        margin-bottom: 49px;
+    }
+
+    #contact div:nth-of-type(1) {
+        grid-area: div1;
+    }
+
+    #contact div:nth-of-type(2) {
+        grid-area: div2;
+    }
+
+    #contact div:nth-of-type(3) {
+        grid-area: div3;
+    }
+
+    #contact div:nth-of-type(4) {
+        grid-area: div4;
+    }
+
+    #contact form {
+        font-family: 14px;
+        grid-area: form;
+        display: grid;
+        grid-template-areas: 
+        'name email'
+        'subject subject'
+        'mensagem mensagem'
+        'submit submit';
+        gap: 10px;
+    }
+
+    #contact #name {
+
+        grid-area: name;
+    }
+    
+    #contact #email {
+        grid-area: email;
+    }
+
+    #contact #subject {
+        grid-area: subject;
+    }
+
+    #contact #mensagem {
+        grid-area: mensagem;
+    }
+
+    #contact button {
+        grid-area: submit;
+    }
+
+    #contact .icons {
+        width: 100%;
+        grid-area: icons;
+        justify-self: center;
+    }
+
+    #contact .icons a img {
+        width: 27px;
+        height: 27px;
+    }
+
+    #contact > img {
+        width: 289px;
+        height: 157px;
+        position: absolute;
+        left: 220px;
+        bottom: 46px;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: calc(100vw + 5px);
+    }
+} 
