@@ -16,10 +16,10 @@
 
 body {
     background-image: url(./imagens/backgroundmobile.webp);
-    background-position: left center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: cover;/* 
+    min-height: 100vh; */
 }
 
 /* ############### Header ############### */
@@ -147,6 +147,8 @@ footer {
     height: 83px;
     margin-top: 69px;
     padding-block: 7px;
+    position: absolute;
+    bottom: 15px;
 }
 
 footer #oCafe {
@@ -224,7 +226,7 @@ footer p {
         display: none;
     }
 
-    /* ###### main ###### */
+    /* ###### Main ###### */
 
     main {
         padding-inline: calc((100% - 980px) * 0.5);
@@ -247,6 +249,8 @@ footer p {
         align-items: center;
         height: 62px;
     }
+
+    /* ###### Footer ###### */
 
     footer {
         position: absolute;
