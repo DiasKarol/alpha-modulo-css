@@ -1,0 +1,255 @@
+:root {
+    --text: #fff;
+    --backcolor: #86cccc;
+    --colorbar: #0fa8a1;
+    --navaside: #6b3b17;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overlock', cursive;
+}
+
+/* ############### Body ############### */
+
+body {
+    background-image: url(./imagens/backgroundmobile.webp);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* ############### Header ############### */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backcolor);
+    height: 91px;
+    padding-left: 30px;
+    padding-right: calc(50% - 160px + 14px);
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+header section h1 {
+    font-family: 'Niconne', cursive;
+    font-weight: 400;
+    font-size: 34px;
+    margin-top: 12px;
+}
+
+header section svg {
+    width: 247px;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+header nav {
+    display: none;
+}
+
+header #hamburguer svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* ############### Main ############### */
+
+main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 210px; 
+    background-color: var(--text);
+    margin-top: 43px;
+}
+
+main aside section {
+    width: 100%;
+    text-align: center;
+}
+
+main aside #horario {
+    color: var(--navaside);
+    border-top: 1px solid var(--navaside);
+    border-left: 1px solid var(--navaside);
+    padding: 12px 13px 29px 13px;
+}
+
+main aside #horario #title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+main aside #horario #title h3 {
+    font-size: 16px;
+    color: var(--backcolor);
+}
+
+main aside .bar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--colorbar);
+    margin-block: 19px;
+}
+.tri {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border: solid transparent;
+    border-width: 10px 10px 0;
+    border-top-color: var(--backcolor);
+}
+
+main aside #siga {
+    color: var(--text);
+    background-color: var(--backcolor);
+    padding-block: 10px;
+}
+
+main aside #siga h3 {
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+main aside #siga img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ############### footer ############### */
+
+footer {
+    background-color: var(--backcolor);
+    width: 100%;
+    height: 83px;
+    margin-top: 69px;
+    padding-block: 7px;
+}
+
+footer #oCafe {
+    font-family: 'Niconne', cursive;
+    font-size: 22px;
+}
+
+footer p {
+    font-size: 14px;
+    color: var(--text);
+    text-align: center;
+}
+
+/* ############### Desktop ############### */
+
+@media (min-width: 765px) {
+    /* ###### Bode ###### */
+
+    body {
+        position: relative;
+        background-image: url(./imagens/background.webp);
+        background-repeat: no-repeat;/* 
+        background-size: cover; */
+        background-position: top;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+
+    /* ###### Header ###### */
+
+    header {
+        width: 100%;
+        margin-top: 69px;
+        margin-bottom: 54px;
+        padding-inline: calc((100% - 980px) * 0.5);
+    }
+
+    header section h1 {
+        font-size: 32px;
+    }
+
+    header section svg {
+        width: 416px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-left: 16px;
+        gap: 16px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    header nav a:hover {
+        color: var(--navaside);
+    }
+
+    header nav #firsta {
+        color: var(--navaside);
+    }
+
+    header nav #login {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    header #hamburguer svg {
+        display: none;
+    }
+
+    /* ###### main ###### */
+
+    main {
+        padding-inline: calc((100% - 980px) * 0.5);
+        margin-bottom: 371px;
+    }
+
+    main aside {
+        width: 300px;
+    }
+
+    main aside #horario {
+        border-right: 1px solid var(--navaside);
+        height: 227px;
+    }
+
+    main aside #siga {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 62px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 2px;
+    }
+}
